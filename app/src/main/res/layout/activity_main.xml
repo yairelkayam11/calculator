@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FF9933"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.j.calculator.MainActivity">
+
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:ems="10"
+        android:textSize="25dp"
+        android:hint="Type here"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:onClick="yair1"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="50dp"
+            android:onClick="yair2"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:onClick="yair3"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:text="x"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:onClick="yair4"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:text="/"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:onClick="yair5"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:text="A/C" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:onClick="yair6"
+            android:layout_weight="1"
+            android:textSize="22dp"
+            android:text="=" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="231dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="match_parent"
+            android:onClick="go"
+            android:layout_height="wrap_content"
+            android:text="credits" />
+    </LinearLayout>
+
+</LinearLayout>
